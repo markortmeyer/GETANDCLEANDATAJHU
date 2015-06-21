@@ -5,7 +5,7 @@
 
 The [tidy data set](https://github.com/markortmeyer/GETANDCLEANDATAJHU/blob/master/tidy_data.txt) for this analysis, contains a set of summary values used to describe how human motion can be captured using the accelerometer and gyroscope present in a Samsung Galaxy S smartphone.
 
-Produced by [run_analysis.R]((https://github.com/markortmeyer/GETANDCLEANDATAJHU/blob/master/run_analysis.R), the tidy dataset consists of a matrix of values 180 rows x 81 columns.  Rows represent single participants performing single activities, providing 79 unique data parameters chosen to characterize motion.
+Produced by [run_analysis.R](https://github.com/markortmeyer/GETANDCLEANDATAJHU/blob/master/run_analysis.R), the tidy dataset consists of a matrix of values 180 rows x 81 columns.  Rows represent single participants performing single activities, providing 79 unique data parameters chosen to characterize motion.
 
 * Column 1:  "Participant_ID", numeric type integer , range 1-30
 * Column 2:  "Particiant_Activity", character type, "Walking", "WalkingUpStairs", "WalkingDownStairs", "Sitting", "Standing", "Lying"
