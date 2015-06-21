@@ -12,7 +12,7 @@ The goal of this analysis is to create a tidy dataset from original [raw data pr
 [Human Activity Recognition Using Smartphones Data (HARUS) Set](http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones)
 
 ## **Tidy Data Preparation**
-Processing of the raw dataset into the [tidy data set](https://github.com/markortmeyer/GETANDCLEANDATAJHU/HARUS_tidy.txt) is accomplished with the [run_analysis.R](https://github.com/markortmeyer/GETANDCLEANDATAJHU/run_analysis.R) script.
+Processing of the raw dataset into the [tidy data set](https://github.com/markortmeyer/GETANDCLEANDATAJHU/blob/master/HARUS_tidy.txt) is accomplished with the [run_analysis.R](https://github.com/markortmeyer/GETANDCLEANDATAJHU/blob/master/run_analysis.R) script.
 
 After retrieving and uncompressing (un-"zipping") the raw data file, data documentation files were loaded into RStudio. 
 
@@ -32,16 +32,16 @@ Test and training data were then combined, creating one large, raw, dataset.
 
 These files contain participant identification data, measured parameter data, and activity identification data respectively.
 
-The [tidy data set](https://github.com/markortmeyer/GETANDCLEANDATAJHU/HARUS_tidy.txt) consolidates the above raw data into a summary dataset whose rows are observations, and columns are participant, activity, and data variables.  The final tidy dataset is 180 rows x 81 columns.
+The tidy data set consolidates the above raw data into a summary dataset whose rows are observations, and columns are participant, activity, and data variables.  The final tidy dataset is 180 rows x 81 columns.
 
 
 #### **Data Processing** 
-After importing and consolidating the raw data, [run_analysis.R](https://github.com/markortmeyer/GETANDCLEANDATAJHU/run_analysis.R) performs several steps to produce the final [tidy data set](https://github.com/markortmeyer/GETANDCLEANDATAJHU/tidy_data.txt).
+After importing and consolidating the raw data, [run_analysis.R](https://github.com/markortmeyer/GETANDCLEANDATAJHU/blob/master/run_analysis.R) performs several steps to produce the final [tidy data set](https://github.com/markortmeyer/GETANDCLEANDATAJHU/blob/master/tidy_data.txt).
 
 * Merging of the "test" and "train" data into a data frame, is performed using "rbind()", which consolidates all observations by row. 
 * cbind() is used to consolidate desired raw parameters into a smaller data frame:  Participant Identification, Participant Activity, Measured Parameter Data.
 * Only parameter data representing "Mean" and "Standard Deviation" of "Participant Activity" are extracted, using "unique()" and "subset()", creating the final tidy dataframe format.
 * Descriptive parameter names are then added to each column using "names()".
-* Finally, the [tidy data set file](https://github.com/markortmeyer/GETANDCLEANDATAJHU/tidy_data.txt) is created using "write.table()".
+* Finally, the [tidy data set file](https://github.com/markortmeyer/GETANDCLEANDATAJHU/blob/master/tidy_data.txt) is created using "write.table()".
 
-The [code book](https://github.com/markortmeyer/GETANDCLEANDATAJHU/CodeBook.md) describes the variables and their units within the [tidy data set](https://github.com/markortmeyer/GETANDCLEANDATAJHU/tidy_data.txt).
+The [code book](https://github.com/markortmeyer/GETANDCLEANDATAJHU/blob/master/CodeBook.md) describes the variables and their units within the [tidy data set](https://github.com/markortmeyer/GETANDCLEANDATAJHU/tidy_data.txt).
