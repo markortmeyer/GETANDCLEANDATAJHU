@@ -28,9 +28,9 @@ Meaning for all compound parameter names may be translated from the following di
 * **std** refers to standard deviation
 * **FFT** refers to Fast Fourier Transform 
 * **Body** refers to participant's body
-* **Gravity** refers to "due to gravitational force"
-* **Acceleration** refers to the rate of change in velocity 
-* **AngularVelocity** refers to speed through an arc of motion
+* **Gravity** refers to "due to gravitational force" in units of meters per second squared (m/s^2)
+* **Acceleration** refers to the rate of change in velocity in units of meters per second squared (m/s^2)
+* **AngularVelocity** refers to speed through an arc of motion in units of radians per second (rads/sec)
 * **Magnitude** refers to scalar quantity without direction
 * **Jerk** is derived from a combination of linear and angular motion
 * **XAxis, YAxis, ZAxis** refers to the linear dimension of consideration
